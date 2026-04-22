@@ -1,13 +1,16 @@
 # Dictionaries and Control Flow
 
-age = 10
+def check_age(age):
+    if age >= 18:
+        return "You are an adult"
+    elif age >= 13:
+        return "You are a teenager"
+    else:
+        return "You are a child"
 
-if age >= 18:
-    print("You are an adult")
-elif age >= 13:
-    print("You are a teenager")
-else:
-    print("You are a child")
+print(check_age(20))
+print(check_age(12))
+print(check_age(56))
 
 age = 25
 has_id = True
